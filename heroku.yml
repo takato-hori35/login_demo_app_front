@@ -6,6 +6,6 @@ build:
     web: Dockerfile
   config:
     WORKDIR: app
-    API_URL: "https://login-demo-app2-api.herokuapp.com"
+    API_URL: "login-demo-app2-api-255688c529da.herokuapp.com"
 run:
   web: yarn run start
