@@ -7,7 +7,7 @@
     :elevation="toolbarStyle.elevation"
   >
     <app-logo
-    @click.native="$vuetify.goTo('#scroll-top')"
+      @click.native="$vuetify.goTo('#scroll-top')"
     />
     <v-toolbar-title>
       {{ appName }}
@@ -24,7 +24,6 @@
         {{ $t(`menus.${menu.title}`) }}
       </v-btn>
     </v-toolbar-items>
-    {{ isScrollPoint }}
   </v-app-bar>
 </template>
 
