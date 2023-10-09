@@ -24,8 +24,8 @@
       </v-btn>
     </v-toolbar-items>
 
-    <app-signup-button />
-    <app-login-button />
+    <before-login-app-bar-signup-button />
+    <before-login-app-bar-login-button />
 
     <v-menu
       bottom
@@ -58,10 +58,10 @@
 </template>
 
 <script>
-import AppSignupButton from '../App/AppSignupButton.vue'
+import BeforeLoginAppBarSignupButton from '../BeforeLogin/BeforeLoginAppBarSignupButton.vue'
 import AppTitle from '../App/AppTitle.vue'
 export default {
-  components: { AppSignupButton, AppTitle },
+  components: { BeforeLoginAppBarSignupButton, AppTitle },
   props: {
     menus: {
       type: Array,

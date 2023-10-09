@@ -2,11 +2,17 @@
 // アプリ全体で共有される
 // 記述方法は決まっているため、以下以外の書き方はできない
 
+const redirectPath = 'projects'
+
 export const state = () => ({
-  loggedIn: false,
   // 追加
   styles: {
     homeAppBarHeight: 56
+  },
+  loggedIn: {
+    redirectPath: {
+      name: redirectPath
+    }
   }
 })
 
