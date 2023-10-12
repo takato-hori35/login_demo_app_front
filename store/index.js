@@ -23,4 +23,8 @@ export const getters = {}
 export const mutation = {}
 
 // アプリ全体のメソッド
-export const actions = {}
+export const actions = {
+  logout ({ commit }) {
+    commit('setLoggedIn', false)
+  }
+}
