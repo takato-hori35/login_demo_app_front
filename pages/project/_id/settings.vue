@@ -1,7 +1,7 @@
 <template>
-  <logged-in-container>
+  <div>
     {{ $route.fullPath }}
-  </logged-in-container>
+  </div>
 </template>
 
 <script>

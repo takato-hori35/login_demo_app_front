@@ -30,11 +30,22 @@ export const state = () => ({
 export const getters = {}
 
 // stateの値を変更する
-export const mutation = {}
+export const mutations = {
+  setCurrentProject (state, payload) {
+    state.projects.current = payload
+  }
+}
 
 // アプリ全体のメソッド
 export const actions = {
   logout ({ commit }) {
     commit('setLoggedIn', false)
+  },
+  // { state, getters, commit, dispatch, routeState, routeGeters }
+  // routeState => ルート(store/index.js)のstateを取得(routeState = state)
+  getCurrentProject ({ state, commit }, params) {
+    const id = Number(params.id)
+    const currentProject = state.projects.list.find(project => project.id === id) || null
+    commit('setCurrentProject', currentProject)
   }
 }
